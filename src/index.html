@@ -16,14 +16,14 @@
 
         <div class="wrapper">
             <header>
-                <span>Teachinder</span>
+                <span class="logo">Teachinder</span>
 
                 <div class="search">
                     <input
                         class="search-input"
                         placeholder="Name, note or age to search"
                     />
-                    <button class="search-button">Search</button>
+                    <button class="primary search-button">Search</button>
                 </div>
             </header>
 
@@ -35,7 +35,7 @@
                     <span>About</span>
                 </nav>
 
-                <button class="add-teacher-btn">Add teacher</button>
+                <button class="add-teacher primary">Add teacher</button>
             </section>
 
             <section class="content top-teachers">
@@ -44,7 +44,7 @@
 
                 <div class="teacher-filters">
                     <div class="teacher-filter">
-                        <label for="teacher-age" class="filter-critirea"
+                        <label for="teacher-age" class="filter-criterion"
                             >Age</label
                         >
                         <select name="teacher-age" class="filter-control">
@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="teacher-filter">
-                        <label for="teacher-region" class="filter-critirea"
+                        <label for="teacher-region" class="filter-criterion"
                             >Region</label
                         >
                         <select name="teacher-region" class="filter-control">
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="teacher-filter">
-                        <label for="teacher-sex" class="filter-critirea"
+                        <label for="teacher-sex" class="filter-criterion"
                             >Sex</label
                         >
                         <select name="teacher-sex" class="filter-control">
@@ -72,20 +72,114 @@
 
                     <div class="teacher-filter">
                         <input type="checkbox" name="teacher-has-photo" />
-                        <label for="teacher-has-photo" class="filter-critirea"
+                        <label for="teacher-has-photo" class="filter-criterion"
                             >Only with photo</label
                         >
                     </div>
 
                     <div class="teacher-filter">
                         <input type="checkbox" name="teacher-favorite" />
-                        <label for="teacher-favorite" class="filter-critirea"
+                        <label for="teacher-favorite" class="filter-criterion"
                             >Only favorites</label
                         >
                     </div>
                 </div>
 
-                <div class="teachers"></div>
+                <div class="teachers">
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Serhii</span>
+                        <span class="last-name">Hryhorenko</span>
+                        <span class="speciality">Programming</span>
+                        <span class="location">Ukraine</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Anna</span>
+                        <span class="last-name">Smith</span>
+                        <span class="speciality">Mathematics</span>
+                        <span class="location">Canada</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">John</span>
+                        <span class="last-name">Doe</span>
+                        <span class="speciality">Physics</span>
+                        <span class="location">USA</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                    <div class="teacher-card">
+                        <img
+                            class="photo"
+                            src="https://thispersondoesnotexist.com"
+                            alt="Teacher Photo"
+                        />
+                        <span class="first-name">Emily</span>
+                        <span class="last-name">Johnson</span>
+                        <span class="location">Australia</span>
+                    </div>
+                </div>
             </section>
 
             <section class="content statistics">
@@ -94,23 +188,62 @@
 
                 <div class="statistics-table">
                     <table>
-                        <th>Name</th>
-                        <th>Speciality</th>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Nationality</th>
+                        <thead>
+                            <th>Name</th>
+                            <th>Speciality</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                        </thead>
 
-                        <tr>
-                            <td>Mock</td>
-                            <td>Mock</td>
-                            <td>Mock</td>
-                            <td>Mock</td>
-                            <td>Mock</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Mathematics</td>
+                                <td>45</td>
+                                <td>Male</td>
+                                <td>American</td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>Physics</td>
+                                <td>38</td>
+                                <td>Female</td>
+                                <td>British</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Johnson</td>
+                                <td>Chemistry</td>
+                                <td>52</td>
+                                <td>Male</td>
+                                <td>Canadian</td>
+                            </tr>
+                            <tr>
+                                <td>Emily Davis</td>
+                                <td>Biology</td>
+                                <td>29</td>
+                                <td>Female</td>
+                                <td>Australian</td>
+                            </tr>
+                            <tr>
+                                <td>William Brown</td>
+                                <td>History</td>
+                                <td>47</td>
+                                <td>Male</td>
+                                <td>South African</td>
+                            </tr>
+                            <tr>
+                                <td>Sarah Wilson</td>
+                                <td>English</td>
+                                <td>34</td>
+                                <td>Female</td>
+                                <td>Irish</td>
+                            </tr>
+                        </tbody>
                     </table>
 
                     <div class="statistics-table-pagination">
-                        <a>1</a>
+                        <a class="active">1</a>
                         <a>2</a>
                         <a>3</a>
                         <a>...</a>
@@ -118,19 +251,137 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="content favorites">
                 <hr class="content-divider" />
                 <h3 class="content-header">Favorites</h3>
-                
-                <div class="carousel favorite-teachers">
-                    
+
+                <div class="favorite-teachers">
+                    <div class="carousel">
+                        <button class="carousel-button prev">❮</button>
+                        <div class="carousel-track">
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Serhii</span>
+                                <span class="last-name">Hryhorenko</span>
+                                <span class="speciality">Programming</span>
+                                <span class="location">Ukraine</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                            <div class="teacher-card">
+                                <img
+                                    class="photo"
+                                    src="https://thispersondoesnotexist.com"
+                                    alt="Teacher Photo"
+                                />
+                                <span class="first-name">Anna</span>
+                                <span class="last-name">Smith</span>
+                                <span class="speciality">Mathematics</span>
+                                <span class="location">Canada</span>
+                            </div>
+                        </div>
+                        <button class="carousel-button next">❯</button>
+                    </div>
                 </div>
             </section>
-            
-            <footer>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta odio libero, hendrerit dignissim nulla cursus ut. Donec quis justo nisl. Curabitur laoreet eros non sodales vulputate. Mauris erat massa, congue in odio at, tincidunt auctor elit. Sed placerat neque nisi, a gravida tellus convallis vel. Aenean rutrum sollicitudin sem, a fermentum libero porta sed. Vivamus lacinia maximus placerat. Aliquam in lorem blandit quam pharetra ultricies eu rhoncus nisl. Donec a lorem egestas, porttitor libero id, porttitor nibh. Pellentesque sit amet nunc vitae turpis tempus volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget iaculis ligula. Morbi non odio arcu.</p>
-                
+
+            <footer class="content">
+                <hr class="content-divider" />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    porta odio libero, hendrerit dignissim nulla cursus ut.
+                    Donec quis justo nisl. Curabitur laoreet eros non sodales
+                    vulputate. Mauris erat massa, congue in odio at, tincidunt
+                    auctor elit. Sed placerat neque nisi, a gravida tellus
+                    convallis vel. Aenean rutrum sollicitudin sem, a fermentum
+                    libero porta sed. Vivamus lacinia maximus placerat. Aliquam
+                    in lorem blandit quam pharetra ultricies eu rhoncus nisl.
+                    Donec a lorem egestas, porttitor libero id, porttitor nibh.
+                    Pellentesque sit amet nunc vitae turpis tempus volutpat.
+                    Orci varius natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Aliquam eget iaculis ligula.
+                    Morbi non odio arcu.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    porta odio libero, hendrerit dignissim nulla cursus ut.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    porta odio libero, hendrerit dignissim nulla cursus ut.
+                </p>
+
                 <section class="nav-section">
                     <nav>
                         <span>Teachers</span>
@@ -138,8 +389,8 @@
                         <span>Favorites</span>
                         <span>About</span>
                     </nav>
-    
-                    <button class="add-teacher-btn">Add teacher</button>
+
+                    <button class="add-teacher primary">Add teacher</button>
                 </section>
             </footer>
         </div>
