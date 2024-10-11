@@ -3,3 +3,5 @@ function findUser(users, criterion) {
 
   return users.find((user) => user[property] === value);
 }
+
+module.exports = { findUser };

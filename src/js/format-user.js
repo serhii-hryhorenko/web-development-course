@@ -10,12 +10,14 @@ function formatUser(user) {
     const postcode = getPostcode(user);
     const { city, state, country } = user.location ?? user;
     const { date: b_date, age } = user.dob ?? user;
-  
-    const {
-      large: picture_large = user.picture_large,
-      thumbnailL: picture_thumbnail = user.picture_thumbnail,
-    } = user.picture;
-  
+
+    let picture_large = user.picture_large;
+    let picture_thumbnail = user.picture_thumbnail;
+    if (user.picture) {
+      picture_large = picture_large || user.picture.large;
+      picture_thumbnail = picture_thumbnail || user.picture.thumbnail;
+    }
+
     return {
       gender,
       email,
@@ -34,9 +36,7 @@ function formatUser(user) {
       picture_thumbnail,
     };
   } catch (err) {
-    console.error("Unexpected user format:", user);
-    console.error(err);
-    
+    console.warn("Unexpected user format:", user, err);
     return null;
   }
 }
@@ -71,12 +71,14 @@ function getCoordinates(user) {
     return user.coordinates;
   }
 
+  if (!user.location) {
+    throw new Error(`Uknown coordinates format for: ${user}`);
+  }
+
   const { coordinates } = user.location;
   if (coordinates) {
     return coordinates;
   }
-
-  throw new Error("Uknown coordinates format for: " + user);
 }
 
 function getTimezone(user) {

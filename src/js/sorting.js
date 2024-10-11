@@ -19,3 +19,5 @@ function sortUsers(users, criterion, asc = true) {
     return result;
   })
 }
+
+module.exports = { sortUsers };

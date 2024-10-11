@@ -20,3 +20,5 @@ function filterUsers(users, criteria) {
     return true;
   });
 }
+
+module.exports = { filterUsers };
